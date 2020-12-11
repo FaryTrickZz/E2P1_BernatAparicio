@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         ListView list = findViewById(R.id.myList);
 
-        String[] options = new String[]{"DONUTS", "FROYO", "GINGERBREAD", "HONEYCOMB", "ICE CREAM", "JELLY BEAN", "KITKAT", "LOLLIPOP"};
+        GridLayout[] options = new GridLayout[]{findViewById(R.id.grid1)};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options);
+        ArrayAdapter<GridLayout> adapter = new ArrayAdapter<GridLayout>(this, android.R.layout.simple_list_item_1, options);
 
         list.setAdapter(adapter);
 
