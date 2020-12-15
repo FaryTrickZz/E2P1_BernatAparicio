@@ -6,52 +6,297 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/myList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+    </ListView>
 
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#cdced4"
-        android:columnCount="1"
-        android:orientation="vertical"
-        android:rowCount="1"
-        android:useDefaultMargins="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200" >
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#0000ff"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="70dp" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ima1"
+                    android:contentDescription="TODO" />
 
-    </GridLayout>
+                <RadioButton
+                    android:id="@+id/radioB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DONUTS"
+                    android:layout_marginTop="25dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima2"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DONUTS"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima3"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DONUTS"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima4"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HONEYCOMB"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima5"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ICE CREAM"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima6"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JEALLY BEAN"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima7"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="KITAKT"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" >
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ima8"
+                android:contentDescription="TODO" />
+
+            <RadioButton
+                android:id="@+id/radioB8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOLLIPOP"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
 
 
 
